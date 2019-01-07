@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> 
+  <script src="https://unpkg.com/aframe-potree-loader-component/dist/aframe-potree-loader-component.min.js"></script> 
+</head>
+ 
+<body>
+  <a-scene>
+      <a-entity potree-loader="
+        src: https://cdn.rawgit.com/potree/potree/develop/pointclouds/lion_takanawa;
+        pointBudget: 1;
+ 
+        pointSize: 1;
+        pointColorType: rgb;
+        minimumNodePixelSize: 100;
+        "
+        position="-1 -1 -5"
+        rotation="-85 0 0"
+      ></a-entity>
+  </a-scene>
+</body>
+</html>
